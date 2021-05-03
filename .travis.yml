@@ -1,3 +1,8 @@
 language: cpp
-script: g++ hello.cpp
-
+notification:
+        email:
+                on_success: always
+                on_failure: always
+script:
+        - make
+        - make test
